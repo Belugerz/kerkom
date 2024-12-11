@@ -44,6 +44,38 @@ void saveToFile(){
 
     fclose(f);
 }
+void delete_student() {
+    int id;
+    system("cls");
+    printf("Masukkan NIM mahasiswa yang ingin dihapus: ");
+    scanf("%d", &id); getchar();
+
+    int found = -1;
+    for (int i = 0; i < student_count; i++) {
+        if (students[i].id == id) {
+            found = i;
+            break;
+        }
+    }
+
+    if (found == -1) {
+        printf("Mahasiswa dengan NIM %d tidak ditemukan.\n", id);
+        getEnter();
+        return;
+    }
+
+
+    for (int i = found; i < student_count - 1; i++) {
+        students[i] = students[i + 1];
+    }
+
+    student_count--;
+    saveToFile();
+
+    printf("Mahasiswa dengan NIM %d berhasil dihapus.\n", id);
+    getEnter();
+}
+
 
 void dbToMemory(){
     FILE *f = fopen("students.txt", "r");
@@ -252,14 +284,15 @@ void tampilkan_mahasiswa () {
 int main() {
     int n;
     dbToMemory();
- 
+
     do {
         system("cls");
         printf("--------Sekolah tanto --------\n");
         printf("1. Tambah Mahasiswa\n");
         printf("2. Tambah Nilai Mahasiswa\n");
         printf("3. Tampilkan Mahasiswa\n");
-        printf("4. Keluar\n");
+        printf("4. Hapus Mahasiswa\n");
+        printf("5. Keluar\n");
         printf("Masukkan pilihan: ");
         scanf("%d", &n);getchar();
 
@@ -274,6 +307,9 @@ int main() {
                 tampilkan_mahasiswa();
                 break;
             case 4:
+                delete_student();
+                break;
+            case 5:
                 printf("Ok bye lol\n");
                 break;
             default:
