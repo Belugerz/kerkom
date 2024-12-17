@@ -24,6 +24,8 @@ typedef struct {
 student students[100];
 int student_count = 0;
 
+void getEnter();
+
 void saveToFile(){
     FILE *f = fopen("students.txt", "w");
     if (f == NULL) {
@@ -43,6 +45,32 @@ void saveToFile(){
     }
 
     fclose(f);
+}
+
+
+void tampilkan_mahasiswa_sorted(){
+    system("cls");
+    if(student_count == 0){
+        printf("Belum ada mahasiswa\n");
+        getEnter();
+
+    }
+    for(int i = 0; i < student_count; i++){
+        for(int j = 0; j < student_count - 1 - i; j++){
+            if(strcmp(students[j].name, students[j+1].name) > 0){
+                student temp = students[j];
+                students[j] = students[j+1];
+                students[j+1] = temp;
+
+            }
+
+        }
+    }
+    printf("=================== List Mahasiswa Terurut Sesuai Abjad=======================\n");
+    for(int i = 0; i < student_count; i++){
+        printf("%s\n", students[i].name);
+    }
+   getEnter();
 }
 void delete_student() {
     int id;
@@ -290,9 +318,10 @@ int main() {
         printf("--------Sekolah tanto --------\n");
         printf("1. Tambah Mahasiswa\n");
         printf("2. Tambah Nilai Mahasiswa\n");
-        printf("3. Tampilkan Mahasiswa\n");
+        printf("3. Tampilkan Detail Mahasiswa\n");
         printf("4. Hapus Mahasiswa\n");
-        printf("5. Keluar\n");
+        printf("5. Tampilkan Mahasiswa\n");
+        printf("6. Keluar\n");
         printf("Masukkan pilihan: ");
         scanf("%d", &n);getchar();
 
@@ -310,8 +339,12 @@ int main() {
                 delete_student();
                 break;
             case 5:
+                tampilkan_mahasiswa_sorted();
+                break;
+            case 6:
                 printf("Ok bye lol\n");
                 break;
+                return 0;
             default:
                 printf("invalid, try again.\n");
                 getEnter();

@@ -1,2 +1,5 @@
 19#tanto#2#bindo#4#matdis#3
 18#Saya Hans#1#algopro#4
+20#sigmamel#0
+40#tantowi#0
+50#Abel#0
