@@ -1,5 +1,99 @@
-19#tanto#2#bindo#4#matdis#3
-18#Saya Hans#1#algopro#4
-20#sigmamel#0
-40#tantowi#0
-50#Abel#0
+1#John Doe#2#Math#4#Science#3
+2#Jane Smith#1#History#2
+3#Alice Johnson#3#Physics#4#Chemistry#3#Biology#2
+4#Bob Brown#2#Economics#4#Accounting#3
+5#Charlie Davis#1#Programming#4
+6#Emily Evans#2#Art#3#Design#2
+7#Daniel Foster#3#Statistics#4#Calculus#3#Algebra#2
+8#Grace Green#1#Philosophy#3
+9#Henry Hall#2#Geography#4#History#2
+10#Isabella King#1#English#4
+11#Jack Lee#3#Programming#4#Algorithms#3#Data Structures#2
+12#Katherine Moore#2#Biology#3#Genetics#2
+13#Leo Martinez#2#Marketing#4#Finance#3
+14#Mia Nelson#1#Creative Writing#4
+15#Noah Parker#3#Physics#4#Math#3#Statistics#2
+16#Olivia Quinn#2#Law#4#Ethics#3
+17#Paul Rivera#1#Sociology#3
+18#Sophia Turner#2#Biology#4#Botany#3
+19#Tom Walker#3#Chemistry#4#Physics#3#Math#2
+20#Uma White#2#Music#4#Art#3
+21#Victor Young#1#Political Science#4
+22#Wendy Zhang#3#Linguistics#4#Literature#3#Grammar#2
+23#Alex Brown#2#Machine Learning#4#AI#3
+24#Bella Clark#1#Psychology#4
+25#Chris Adams#3#Networking#4#Cybersecurity#3#Ethical Hacking#2
+26#Diana Brooks#2#Journalism#4#Media Studies#3
+27#Ethan Wood#1#Robotics#4
+28#Fiona Carter#3#Health Science#4#Nutrition#3#Anatomy#2
+29#George Baker#2#Philosophy#3#Logic#4
+30#Hannah Scott#1#Education#4
+31#Ian Wright#3#History#4#World War II#3#Civil War#2
+32#Julia Reed#2#Design#4#Animation#3
+33#Kevin Bell#1#Photography#4
+34#Laura Allen#3#Biology#4#Genetics#3#Ecology#2
+35#Michael Lopez#2#Astronomy#4#Astrophysics#3
+36#Nina Torres#1#Graphic Design#4
+37#Oliver Rivera#3#AI#4#Programming#3#Data Science#2
+38#Patrick Coleman#2#Law#4#Constitutional Law#3
+39#Quinn Morgan#1#Environmental Science#4
+40#Rachel Butler#3#Political Science#4#Public Administration#3#International Relations#2
+41#Sam Rogers#2#Music#4#Composition#3
+42#Tina Bailey#1#Biotechnology#4
+43#Umar Bryant#3#Chemistry#4#Organic Chemistry#3#Physical Chemistry#2
+44#Victor Harris#2#Economics#4#Microeconomics#3
+45#Wanda Griffin#1#Criminology#4
+46#Xavier Diaz#3#Business#4#Management#3#Entrepreneurship#2
+47#Yasmine Ford#2#Finance#4#Accounting#3
+48#Zachary Hayes#1#Ethics#4
+49#Amy Taylor#3#Medicine#4#Pharmacology#3#Pathology#2
+50#Brian Hughes#2#Statistics#4#Data Analytics#3
+51#Cindy Powell#1#Sustainability#4
+52#David Ross#3#Engineering#4#Mechanical Engineering#3#Electrical Engineering#2
+53#Ella Peterson#2#Architecture#4#Urban Design#3
+54#Frank Murphy#1#Physics#4
+55#Gloria Nelson#3#Chemistry#4#Analytical Chemistry#3#Inorganic Chemistry#2
+56#Harry Cox#2#Programming#4#Software Engineering#3
+57#Isla Jenkins#1#Creative Arts#4
+58#Jake Perkins#3#Education#4#Teaching Methods#3#Curriculum Design#2
+59#Kara Mitchell#2#Fashion Design#4#Textile Design#3
+60#Liam Crawford#1#Interior Design#4
+61#Molly Roberts#3#Economics#4#Finance#3#Marketing#2
+62#Nathan Bell#2#Robotics#4#Automation#3
+63#Olivia Hughes#1#Environmental Law#4
+64#Peter Knight#3#Sports Science#4#Physiology#3#Kinesiology#2
+65#Queen Anderson#2#Philosophy#4#Ethics#3
+66#Ruby Carter#1#Linguistics#4
+67#Sean Porter#3#Astronomy#4#Astrophysics#3#Space Exploration#2
+68#Tara Simmons#2#Biology#4#Microbiology#3
+69#Ulysses Edwards#1#Anthropology#4
+70#Violet Ellis#3#History#4#Medieval History#3#Renaissance History#2
+71#William Clark#2#Chemistry#4#Biochemistry#3
+72#Xena Hughes#1#Statistics#4
+73#Yara White#3#Math#4#Linear Algebra#3#Number Theory#2
+74#Zane Cooper#2#Cybersecurity#4#Ethical Hacking#3
+75#Abigail Brooks#1#Computer Science#4
+76#Brandon Nelson#3#Physics#4#Thermodynamics#3#Optics#2
+77#Charlotte Reed#2#Botany#4#Plant Biology#3
+78#Derek Foster#1#Marine Biology#4
+79#Emily Webb#3#Law#4#Contracts#3#Torts#2
+80#Fred Baker#2#Economics#4#Macroeconomics#3
+81#Grace Rogers#1#Art History#4
+82#Harry Lee#3#Biology#4#Zoology#3#Ecology#2
+83#Isabella Stone#2#Chemistry#4#Organic Chemistry#3
+84#Jack Ward#1#Physics#4
+85#Katherine Young#3#Programming#4#Web Development#3#Database Management#2
+86#Leo Diaz#2#Finance#4#Investment#3
+87#Mia Adams#1#Psychology#4
+88#Nathan Kelly#3#Biology#4#Genetics#3#Microbiology#2
+89#Olivia Morris#2#English#4#Creative Writing#3
+90#Paul Bennett#1#Geology#4
+91#Rachel Carter#3#Education#4#Teaching Strategies#3#Assessment#2
+92#Sam Cooper#2#Math#4#Statistics#3
+93#Tina Harris#1#Drama#4
+94#Umar Stone#3#Programming#4#Software Development#3#AI#2
+95#Victor Hill#2#Physics#4#Quantum Mechanics#3
+96#Wendy Green#1#Astronomy#4
+97#Xavier Hughes#3#Chemistry#4#Materials Science#3#Polymers#2
+98#Yasmine Jenkins#2#Music#4#Theory#3
+99#Zachary Taylor#1#Economics#4

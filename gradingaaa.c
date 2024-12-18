@@ -47,6 +47,159 @@ void saveToFile(){
     fclose(f);
 }
 
+void quickSort(student students[], int low, int high) {
+    if (low < high) {
+        int pi = partition(students, low, high);
+
+        quickSort(students, low, pi - 1);
+        quickSort(students, pi + 1, high);
+    }
+}
+
+int partition(student students[], int low, int high) {
+    char *pivot = students[high].name;
+    int i = low - 1;
+
+    for (int j = low; j < high; j++) {
+        if (strcmp(students[j].name, pivot) < 0) {
+            i++;
+            student temp = students[i];
+            students[i] = students[j];
+            students[j] = temp;
+        }
+    }
+    student temp = students[i + 1];
+    students[i + 1] = students[high];
+    students[high] = temp;
+
+    return i + 1;
+}
+
+void insertionSort(student students[], int student_count) {
+    for (int i = 1; i < student_count; i++) {
+        student key = students[i];
+        int j = i - 1;
+
+        while (j >= 0 && strcmp(students[j].name, key.name) > 0) {
+            students[j + 1] = students[j];
+            j--;
+        }
+        students[j + 1] = key;
+    }
+}
+
+void merge(student students[], int left, int mid, int right) {
+    int n1 = mid - left + 1;
+    int n2 = right - mid;
+
+    student L[n1], R[n2];
+
+    for (int i = 0; i < n1; i++)
+        L[i] = students[left + i];
+    for (int j = 0; j < n2; j++)
+        R[j] = students[mid + 1 + j];
+
+    int i = 0, j = 0, k = left;
+    while (i < n1 && j < n2) {
+        if (strcmp(L[i].name, R[j].name) <= 0) {
+            students[k] = L[i];
+            i++;
+        } else {
+            students[k] = R[j];
+            j++;
+        }
+        k++;
+    }
+
+    while (i < n1) {
+        students[k] = L[i];
+        i++;
+        k++;
+    }
+
+    while (j < n2) {
+        students[k] = R[j];
+        j++;
+        k++;
+    }
+}
+
+void mergeSort(student students[], int left, int right) {
+    if (left < right) {
+        int mid = left + (right - left) / 2;
+
+        mergeSort(students, left, mid);
+        mergeSort(students, mid + 1, right);
+
+        merge(students, left, mid, right);
+    }
+}
+
+void selectionSort(student students[], int student_count) {
+    for (int i = 0; i < student_count - 1; i++) {
+        int minIndex = i;
+
+        for (int j = i + 1; j < student_count; j++) {
+            if (strcmp(students[j].name, students[minIndex].name) < 0) {
+                minIndex = j;
+            }
+        }
+
+        if (minIndex != i) {
+            student temp = students[i];
+            students[i] = students[minIndex];
+            students[minIndex] = temp;
+        }
+    }
+}
+int binarySearch(student students[], int student_count, int id) {
+    int left = 0, right = student_count - 1;
+
+    while (left <= right) {
+        int mid = left + (right - left) / 2;
+
+        if (students[mid].id == id) {
+            return mid; 
+        } else if (students[mid].id < id) {
+            left = mid + 1;
+            right = mid - 1;
+        }
+    }
+
+    return -1;
+}
+
+int interpolationSearch(student students[], int student_count, int id) {
+    int low = 0, high = student_count - 1;
+
+    while (low <= high && id >= students[low].id && id <= students[high].id) {
+        if (low == high) {
+            if (students[low].id == id)
+                return low;
+            return -1;
+        }
+
+
+        int pos = low + ((id - students[low].id) * (high - low) /
+                         (students[high].id - students[low].id));
+
+
+        if (students[pos].id == id) {
+            return pos;
+        } else if (students[pos].id < id) {
+            low = pos + 1;
+        } else {
+            high = pos - 1;
+        }
+    }
+
+    return -1;
+}
+
+
+
+
+
 
 void tampilkan_mahasiswa_sorted(){
     system("cls");
@@ -66,6 +219,7 @@ void tampilkan_mahasiswa_sorted(){
 
         }
     }
+
     printf("=================== List Mahasiswa Terurut Sesuai Abjad=======================\n");
     for(int i = 0; i < student_count; i++){
         printf("%s\n", students[i].name);
